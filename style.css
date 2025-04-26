@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html,
+body {
+    line-height: 1.5;
+    font-weight: 300;
+
+}
+
+nav {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    background-color: grey;
+    box-shadow: 3px 3px 5px black;
+    padding: 10px;
+    margin-bottom: 32px;
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fa-bars {
+    font-size: 32px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.hero-food {
+    height: 350px;
+    width: 350px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.hero-desc {
+    height: 500px;
+    width: 700px;
+    /* background-color: cadetblue; */
+    padding: 35px;
+}
+
+.hero-desc:hover,
+.hero-food:hover,
+.cards:hover {
+    border: 4px solid rgb(7, 74, 116);
+}
+
+button:hover {
+    border: 2px solid blue;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.hero-food img {
+    width: 100%;
+    overflow: hidden;
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 50%;
+    border: 50px solid grey;
+}
+
+.hero-line1 h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    font-weight: 800;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.hero-butt1,
+.hero-butt2 {
+    padding: 15px;
+}
+
+.hero-butt1 button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+.hero-butt2 button {
+    background-color: rgb(241, 199, 12);
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    padding: 20px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card {
+    height: 100px;
+    width: 400px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: gray;
+}
+
+.card:hover {
+    border: 2px solid black;
+    box-shadow: 3px 3px 5px grey;
+
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.menu-bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu button {
+    background-color: green;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 15px;
+
+}
+
+.menu h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    /* Create 3 equal columns */
+    grid-template-rows: repeat(5, 1fr);
+    /* Define 5 equal rows */
+    grid-template-areas:
+        "I1 I1 I2"
+        "I1 I1 I2"
+        "I1 I1 I6"
+        "I4 I5 I6"
+        "I4 I5 I7";
+}
+
+/* Grid item classes */
+.item-1 {
+    grid-area: I1;
+}
+
+.item-2 {
+    grid-area: I2;
+}
+
+.item-3 {
+    grid-area: I3;
+}
+
+/* This one isn't used in grid-template-areas */
+.item-4 {
+    grid-area: I4;
+}
+
+.item-5 {
+    grid-area: I5;
+}
+
+.item-6 {
+    grid-area: I6;
+}
+
+/* .item-7 { grid-area: I7; } */
+.grid img:hover {
+    border: 3px solid rgb(3, 74, 118);
+    box-shadow: 3px 3px 5px grey;
+    transition: border box-shadow  2s ease-in;
+}
+
+/* Style for grid items */
+.grid>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: peachpuff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 100%;
+}
+
+/* Image styling */
+.grid img {
+    max-width: 100%;
+    /* Ensure image doesn't exceed the container width */
+    max-height: 100%;
+    /* Ensure image doesn't exceed the container height */
+    object-fit: contain;
+    /* Make sure the entire image is visible without distortion */
+    display: block;
+    /* Remove any unwanted space below the image */
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: bisque;
+    height: 300px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.footer h5 {
+    color: #444;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+a:hover {
+    text-decoration: solid black underline;
+}
